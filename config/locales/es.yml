@@ -1,0 +1,85 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  activerecord:
+    attributes:
+      user:
+        first_name: "Nombre"
+        last_name: "Apellido"
+        email: "Email"
+        password: "Contraseña"
+        password_confirmation: "Confirmación de contraseña"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: " campo requerido"
+              taken: " ya existe"
+            username:
+              blank: " campo requerido"
+              taken: " ya existe"
+            password:
+              blank: " campo requerido"
+              too_short: " debe tener al menos 4 caracteres"
+              too_long: " muy larga"
+              confirmation: " no coincide"
+  placeholders:
+    user:
+      first_name: "Nombre"
+      last_name: "Apellido"
+      email: "Email"
+      password: "Contraseña"
+      password_confirmation: "Confirmar contraseña"
+      password_current: "Contraseña actual"
+      password_new: "Nueva contraseña"
+  modules:
+    register:
+      title: "Regístrate"
+      btn: "Regístrate"
+      btn_update: "Actualizar"
+      btn_pass: "Cambiar contraseña"
+      footer: "¿Ya tienes cuenta? Ingresa aquí"
+    login:
+      title: "Ingresa"
+      need_login: "Ingresa para continuar"
+      footer: "¿No tienes cuenta? Regístrate aquí"
+    edit:
+      title: "Editando usuario"
+      change_pass: "Cambio de contraseña"
+  notice:
+    user:
+      create: "Se ha enviado un link de activación a tu correo"
+      update: "El usuario se ha actualizado"
+      activate: "Tu cuenta ha sido activada"
+      unsubscribe: "Ya no recibirás estos correos"
+  common:
+    app_name: "SoSafe"
+    app_desc: "So safe description"
+    app_url: "http://sosafe.cl"
+    toggle_navigation: "Invertir navegación"
+    nav:
+      register: "Regístrate"
+      login: "Ingresa"
+      admin: "Admin"
+      logout: "Salir"
+    forms:
+      show_errors: "Errores: "
+      save: "Save"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

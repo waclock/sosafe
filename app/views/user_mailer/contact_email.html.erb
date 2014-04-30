@@ -1,0 +1,27 @@
+<%= render :partial => 'user_mailer/header', :locals => {} %> 
+
+<div style="font-weight: 100; font-size: 20px;" >
+  Hi there, administrators.
+</div>
+
+  
+  	<br>
+  	A feedback email was sent to you:
+  	<br>
+
+  	<br />
+	Sent by: <%= @nombre %>
+	<br><br />
+	Contact email: <%= @mail %>
+	<br /><br />
+	Subject: <%= @asunto %>
+	<br /><br />
+	Content: <%= @contenido %>
+
+
+<br><br>
+
+Cheers<br>
+<!-- NAME -->
+
+<%= render :partial => 'user_mailer/footer', :locals => {} %> 

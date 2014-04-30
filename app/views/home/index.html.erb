@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SOSAFE: El futuro de la seguridad en tus manos</title>
+  </head>
+
+  <body>
+    <div id="mainscreen">
+      <div id="maintitle">
+        <h2 id="sosafe_description" class="common_style shadowed_text main_title_format">
+        </h2>
+      </div>
+    </div>
+
+    <div id="middlescreen">
+      <div id="main_container">
+        <div class="container">
+          <img class="centered" src="../assets/avisa.png">
+          <h3 class="common_style middle_title">Avisa</h3>
+          <p class="description common_style">
+            Alerta a tus contactos, vecinos y <br>
+            servicios de emergencia adheridos con <br>
+            un solo tap.
+          </p>
+        </div>
+        
+        <div class="container">
+          <img class="centered" src="../assets/Localiza.png">
+          <h3 class="common_style middle_title">Localiza</h3>
+          <p class="description common_style">
+            Ubica a tus hijos y seres queridos <br>
+            cuando quieras. Podras ver donde estan <br>
+            a tiempo real en un mapa y asi estar <br>
+            siempre tranquilo.
+          </p>
+        </div>
+
+        <div class="container">
+          <img class="centered" src="../assets/24-7.png">
+          <h3 class="common_style middle_title">24-7</h3>
+          <p class="description common_style">
+            SOSAFE te acompaña 24 horas al dia, 7 <br>
+            dias a la semana, los 365 dias del año. Tu <br>
+            seguridad no tiene horario.
+          </p>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+    </div>
+
+    <div id="bottomscreen">
+      <img class="centered" src="../assets/sosafe_logo.png">
+      <h2 id="final_comment" class="common_style">
+        Ponte en contacto con nosotros.
+      </h2>
+
+      <div id="contact_form">
+        <form>
+          <input class="input_text" id='emailID'type="text" placeholder="Email">
+          <input class="input_text" id='nameID' type="text" placeholder="Nombre">
+          <input id="send_button" type="text" value="Enviar">
+        </form>
+        <p id="footer">Ingresa tu nombre y mail de contacto</p>
+      </div>
+    </div>
+
+    <div id="end">
+    </div>
+  </body>
+<script type="text/javascript">
+  $('#send_button').click(function(e){
+    var name=$('#nameID').val();
+    var email=$('#emailID').val();
+    $.ajax({
+      type: 'GET',
+      url: "<%= add_user_path %>",
+      data: {name: name , email: email },
+      success: function(data) {
+        $('#send_button').attr('value',"Thanks!");
+        $('#send_button').prop('disabled',true);
+        console.log("Thanks");
+      }
+    });
+  });
+      $("#send_button").keyup(function(event){
+      if(event.keyCode == 13){
+          $("#send_button").click();
+        }
+      });
+</script>
+</html>
+

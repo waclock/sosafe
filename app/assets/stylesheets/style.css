@@ -1,0 +1,160 @@
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Lato Regular"), local("Lato-Regular"), url("https://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff") format("woff");
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	margin-top: 2rem;
+}
+
+#mainscreen {
+	position: relative;
+ 	margin: 0px;
+	padding: 0px;
+	background-size: cover;
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-image: url('../assets/background.jpg');
+	background-position: bottom right;
+	min-height: 700px;
+	min-width: 1150px;
+}
+
+.common_style {
+	font-family: 'Lato';
+}
+
+#maintitle {
+	position: absolute;
+	left: 10%; 
+	top: 15%;
+}
+
+#sosafe_title {
+	font-size: 7rem;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#sosafe_description {
+	margin-bottom: 0px;
+	font-weight: 200;
+}
+
+.middle_title {
+	text-align: center;
+	font-size: 1.7rem;
+	color: rgb(68, 54, 66);
+	font-weight: 700;
+}
+
+.shadowed_text {
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main_title_format {
+	color: white;
+	text-align: center;
+}
+
+#main_container {
+	min-width: 1150px;
+	max-width: 1150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#final_comment {
+	color: rgb(143, 134, 142);
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 24px;
+	min-width: 1150px;
+	text-align: center;
+}
+
+#contact_form {
+	background: rgb(61, 75, 91);
+	width: 765px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+	padding: 1rem 1.3rem;
+	border-radius: 0.5rem;
+}
+
+#footer {
+	font-family: 'Lato';
+	text-align: center;
+	color: rgb(221, 221, 221);
+	font-weight: 500;
+	font-size: 1.25rem;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.input_text {
+	width: 300px;
+	height: 48px;
+	color: rgb(85, 84, 89);
+	font-family: 'Lato';
+	font-size: 1.1rem;
+	font-weight: 700;
+	border-radius: 0.25rem;
+	border: 0px none;
+	margin: 0.5rem 0.25rem;
+}
+
+#send_button {
+	width:8%;
+	background: rgb(61, 167, 242);
+	font-family: 'Lato';
+	font-weight: 700;
+	padding: 0.75rem 2rem !important;
+	cursor: pointer;
+	color: white;
+	border: 0px none;
+	border-radius: 0.25rem;
+	margin: 0.5rem 0.25rem;
+	font-size: 1.1rem;
+	height: 48px;
+	border-bottom: 2px solid rgb(25, 75, 163);
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+	float: left;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+#middlescreen {
+	background-color: rgb(251, 250, 248);
+	margin: 0;
+	padding: 0;
+	border-bottom: 3px solid rgb(241, 239, 238);
+}
+
+.description {
+	font-size: 0.95rem;
+	color: rgb(85, 84, 89);
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bottomscreen {
+	clear: both;
+	min-width: 1150px;
+}
